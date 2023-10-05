@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Tip Calcualtor</h1>
+            <form>
+                <div>
+                    <label for="amount">Bill Amount</label>
+                    <button><i class="fas fa-dollar-sign"></i></button><input id="amount" type="text">
+                </div>
+                <div>
+                    <label for="amount">Number of guests</label>
+                    <button><i class="fas fa-male"></i></button><input id="guest" type="text">
+                </div>
+                <div>
+                    <label for="quality">Service Quality</label>
+                    <select id="quality">
+                        <option disabled selected value="0">Choose...</option>
+                        <option value="0.3">30% - Outstanding</option>
+                        <option value="0.2">20% - Good</option>
+                        <option value="0.15">15% - It Was ok</option>
+                        <option value="0.1">10% - Bad</option>
+                        <option value="0.5">5% - Terrible</option>
+                        <button onclick="calcualte()">Calculate</button>
+                    </select>
+                </div>
+            </form>
+
+            <div id="tip-amount">
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
